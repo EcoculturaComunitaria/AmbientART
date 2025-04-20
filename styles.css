@@ -49,6 +49,11 @@ nav ul li a {
   color: #333;
   font-weight: bold;
 }
+.portada-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* SECCIONES */
 section {
