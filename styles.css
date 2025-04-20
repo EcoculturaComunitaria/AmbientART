@@ -40,6 +40,17 @@ nav ul li a {
     color: #000000;
     font-weight: bold;
 }
+.logo-contenedor {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.logo-contenedor img {
+  width: 70px;
+  height: auto;
+  border-radius: 50%; /* si quieres redondearlo, opcional */
+}
 
 /* SECCIONES */
 section {
