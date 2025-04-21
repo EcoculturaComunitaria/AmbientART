@@ -1,218 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmbientArte</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #ffffff;
-            color: #333;
-        }
-        header {
-            background-color: #0096C7; /* Azul capri */
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header img {
-            height: 50px;
-            margin-right: 10px;
-        }
-        header nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        header nav a:hover {
-            text-decoration: underline;
-        }
-        h1, h2, h3 {
-            color: #003566; /* Azul rey */
-        }
-        .btn {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-        .btn:hover {
-            background-color: #333;
-        }
-        section {
-            padding: 40px 20px;
-        }
-        .subtitulo {
-            color: #FFBE0B;
-            border-left: 5px solid #8B4513;
-            padding-left: 10px;
-            margin-bottom: 20px;
-        }
-        .linea {
-            border-top: 3px solid #0096C7;
-            margin: 20px 0;
-        }
-        .servicios, .lineas, .galeria {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .servicio, .linea, .foto {
-            flex: 1 1 calc(50% - 20px);
-            background-color: #ADE8F4;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .servicio img, .linea img, .foto img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .contacto {
-            background-color: #CAF0F8;
-            padding: 30px;
-            border-radius: 10px;
-        }
-        footer {
-            background-color: #0096C7;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: #fff;
-            padding: 15px;
-            border-radius: 50%;
-            font-size: 20px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmbientArte</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #ffffff;
+      color: #000;
+    }
+
+    header {
+      background-color: #96BAD5;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    h1, h2, h3 {
+      color: #004AAD;
+    }
+
+    .btn {
+      background: #000;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .sub-menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .sub-menu div {
+      background: #C5FAD5;
+      border: 2px solid #96BAD5;
+      padding: 15px;
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-    <div style="display: flex; align-items: center;">
-        <img src="logo.png" alt="AmbientArte Logo">
-        <h1>AmbientArte</h1>
-    </div>
+  <header>
+    <img src="logo.png" alt="AmbientArte Logo">
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#historia">Nuestra historia</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#galeria">Galería</a>
-        <a href="#lineas">Líneas EcoCulturales</a>
-        <a href="#contacto">Contacto</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#historia">Nuestra historia</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#lineas">Líneas EcoCulturales</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
     </nav>
-</header>
+  </header>
 
-<section id="inicio">
-    <h2 class="subtitulo">Bienvenidos a AmbientArte</h2>
-    <p>Muralismo, educación ambiental y jardinería para comunidades conscientes.</p>
-    <img src="inicio.jpg" alt="Mural comunitario" style="width:100%; border-radius:10px;">
+  <section id="inicio" class="section">
+    <img src="inicio.jpg" alt="Mural Inspirador">
+    <h1>Transformamos espacios, sembramos conciencia</h1>
     <a href="#historia" class="btn">Conoce nuestra historia</a>
-</section>
+  </section>
 
-<div class="linea"></div>
-
-<section id="historia">
+  <section id="historia" class="section">
     <h2>Nuestra Historia</h2>
-    <p>Soy Kelly Montes Buelvas, educadora comunitaria, artista muralista y amante de la naturaleza. AmbientArte nace del deseo de transformar barrios a través del color, las plantas y la conciencia ambiental.</p>
-    <p>Consulta mi investigación completa en la <a href="#" target="_blank">Universidad de Cartagena</a>.</p>
-</section>
+    <p>Soy educadora comunitaria y amante de la naturaleza. AmbientArte nació del deseo de combinar muralismo, educación ambiental y jardinería urbana para transformar entornos y sembrar conciencia. Puedes consultar mi investigación en el repositorio de la Universidad de Cartagena.</p>
+  </section>
 
-<div class="linea"></div>
-
-<section id="servicios">
+  <section id="servicios" class="section">
     <h2>Servicios</h2>
-    <div class="servicios">
-        <div class="servicio">
-            <h3>Murales Colectivos</h3>
-            <img src="mural.jpg" alt="Mural">
-        </div>
-        <div class="servicio">
-            <h3>Jardines Comunitarios</h3>
-            <img src="jardin.jpg" alt="Jardín">
-        </div>
-        <div class="servicio">
-            <h3>Talleres de pintura</h3>
-            <img src="taller.jpg" alt="Taller">
-        </div>
-        <div class="servicio">
-            <h3>Educación ambiental</h3>
-            <img src="educacion.jpg" alt="Educación">
-        </div>
-    </div>
-</section>
+    <p>Ofrecemos actividades creativas y ambientales:</p>
+    <img src="mural.jpg" alt="Murales Colectivos">
+    <p>Murales Colectivos</p>
+    <img src="jardin.jpg" alt="Jardines Comunitarios">
+    <p>Jardines Comunitarios</p>
+    <img src="taller.jpg" alt="Talleres de pintura">
+    <p>Talleres de pintura ambiental</p>
+    <img src="educacion.jpg" alt="Educación ambiental">
+    <p>Educación ambiental participativa</p>
+  </section>
 
-<div class="linea"></div>
-
-<section id="lineas">
+  <section id="lineas" class="section">
     <h2>Líneas EcoCulturales</h2>
-    <div class="lineas">
-        <div class="linea">
-            <h3>Eco Comunidades</h3>
-            <p>Educación ambiental, talleres y planeación participativa.</p>
-        </div>
-        <div class="linea">
-            <h3>Naturaleza en las Urbes</h3>
-            <p>Murales, siembra, limpiezas y jornadas ecológicas.</p>
-        </div>
-        <div class="linea">
-            <h3>Arte para Mayores</h3>
-            <p>Talleres artísticos y murales con adultos mayores.</p>
-        </div>
-        <div class="linea">
-            <h3>Semilleros Infantiles</h3>
-            <p>Creatividad ambiental para niñas y niños.</p>
-        </div>
+    <div class="sub-menu">
+      <div>
+        <h3>Eco Comunidades</h3>
+        <p>Educación, planeación y talleres comunitarios para fortalecer el tejido social y ambiental.</p>
+      </div>
+      <div>
+        <h3>Naturaleza en las Urbes</h3>
+        <p>Murales, siembras, limpiezas y jornadas ecológicas en barrios y zonas urbanas.</p>
+      </div>
+      <div>
+        <h3>Arte para Mayores</h3>
+        <p>Talleres de pintura mural y artística dirigidos a adultos mayores de la comunidad.</p>
+      </div>
+      <div>
+        <h3>Semilleros Infantiles</h3>
+        <p>Jornadas ambientales, pintura y creatividad para niños y niñas de diferentes edades.</p>
+      </div>
     </div>
-</section>
+    <h3 style="margin-top:30px;">EcoConsejo de la Semana</h3>
+    <p>"Cada árbol que plantes es una historia que comienza." 🌱</p>
+    <h3 style="margin-top:30px;">Próximas Actividades</h3>
+    <p>Mural Colectivo - Barrio La Esperanza | 30 de abril, 8:00 a.m.</p>
+  </section>
 
-<div class="linea"></div>
-
-<section id="galeria">
+  <section id="galeria" class="section">
     <h2>Galería de Experiencias</h2>
-    <div class="galeria">
-        <div class="foto"><img src="galeria1.jpg" alt="Actividad 1"></div>
-        <div class="foto"><img src="galeria2.jpg" alt="Actividad 2"></div>
-        <div class="foto"><img src="galeria3.jpg" alt="Actividad 3"></div>
-        <div class="foto"><img src="galeria4.jpg" alt="Actividad 4"></div>
+    <div class="gallery">
+      <img src="galeria1.jpg" alt="Galería 1">
+      <img src="galeria2.jpg" alt="Galería 2">
+      <img src="galeria3.jpg" alt="Galería 3">
+      <img src="galeria4.jpg" alt="Galería 4">
     </div>
-</section>
+  </section>
 
-<div class="linea"></div>
-
-<section id="contacto">
+  <section id="contacto" class="section">
     <h2>Contacto</h2>
-    <div class="contacto">
-        <p>Email: ambientarte@gmail.com</p>
-        <p>WhatsApp: +57 300 000 0000</p>
-        <form>
-            <input type="text" placeholder="Tu nombre" required><br><br>
-            <input type="email" placeholder="Tu correo" required><br><br>
-            <textarea placeholder="Mensaje" required></textarea><br><br>
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-    </div>
-</section>
+    <p>Email: ambientarte@gmail.com</p>
+    <p>WhatsApp: +57 300 000 0000</p>
+    <a href="https://wa.me/573000000000" class="btn">Escríbenos por WhatsApp</a>
+  </section>
 
-<a href="https://wa.me/573000000000" class="whatsapp-float" target="_blank">💬</a>
-
-<footer>
-    <p>&copy; 2025 AmbientArte. Todos los derechos reservados.</p>
-    <p>Diseño web por Kelly Montes Buelvas</p>
-</footer>
+  <footer>
+    <p>Síguenos en redes sociales:</p>
+    <p>Facebook | Instagram | YouTube</p>
+    <p>&copy; 2025 AmbientArte | Todos los derechos reservados</p>
+  </footer>
 
 </body>
 </html>
