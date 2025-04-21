@@ -44,7 +44,7 @@ nav a:hover {
 
 .section h3 {
   color: #FFC300; /* Amarillo */
-  border-bottom: 2px solid #8B4513; /* Borde café */
+  border-bottom: 2px solid #8B4513; /* Café */
   display: inline-block;
   padding-bottom: 5px;
   margin-bottom: 15px;
@@ -104,7 +104,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #0033A0; /* Azul Rey */
+  background-color: #0033A0;
   color: white;
   text-align: center;
   padding: 20px;
