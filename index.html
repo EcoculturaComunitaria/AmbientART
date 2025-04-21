@@ -3,96 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmbientART</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>AmbientArte</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+        header {
+            background-color: #0096C7; /* Azul capri */
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        h1, h2, h3 {
+            color: #003566; /* Azul rey */
+        }
+        .btn {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #333;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .subtitulo {
+            color: #FFBE0B;
+            border-left: 5px solid #8B4513;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        .linea {
+            border-top: 3px solid #0096C7;
+            margin: 20px 0;
+        }
+        .servicios, .lineas, .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .servicio, .linea, .foto {
+            flex: 1 1 calc(50% - 20px);
+            background-color: #ADE8F4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .servicio img, .linea img, .foto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .contacto {
+            background-color: #CAF0F8;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #0096C7;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: #fff;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- HEADER -->
 <header>
-  <div class="header-contenedor">
-    <div class="logo-contenedor">
-      <img src="img/logoAmbientART.png" alt="Logo AmbientART">
+    <div style="display: flex; align-items: center;">
+        <img src="logo.png" alt="AmbientArte Logo">
+        <h1>AmbientArte</h1>
     </div>
-    <h1>AmbientART</h1>
-  </div>
-
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#historia">Nuestra Historia</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#lineas">Líneas EcoCulturales</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Nuestra historia</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#lineas">Líneas EcoCulturales</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 </header>
 
 <section id="inicio">
-  <img src="img/fotoPortada.jpg" alt="Portada AmbientART" class="portada-img">
+    <h2 class="subtitulo">Bienvenidos a AmbientArte</h2>
+    <p>Muralismo, educación ambiental y jardinería para comunidades conscientes.</p>
+    <img src="inicio.jpg" alt="Mural comunitario" style="width:100%; border-radius:10px;">
+    <a href="#historia" class="btn">Conoce nuestra historia</a>
 </section>
 
-    <!-- INICIO -->
-    <section id="inicio">
-        <h2>Bienvenidos a AmbientART</h2>
-        <p>Un espacio donde la educación ambiental y el arte se unen para transformar comunidades.</p>
-        <a href="#historia" class="boton">Conoce nuestra historia</a>
-    </section>
+<div class="linea"></div>
 
-    <!-- NUESTRA HISTORIA -->
-    <section id="historia">
-        <h2>Nuestra Historia</h2>
-        <p>Aquí irá tu historia personal como educadora ambiental y muralista comunitaria. Enlace a tu investigación: 
-        <a href="https://repositorio.unicartagena.edu.co/entities/publication/1f625dbc-9606-4533-9538-a3143cddf102" target="_blank">Ver Investigación</a></p>
-    </section>
+<section id="historia">
+    <h2>Nuestra Historia</h2>
+    <p>Soy Kelly Montes Buelvas, educadora comunitaria, artista muralista y amante de la naturaleza. AmbientArte nace del deseo de transformar barrios a través del color, las plantas y la conciencia ambiental.</p>
+    <p>Consulta mi investigación completa en la <a href="#" target="_blank">Universidad de Cartagena</a>.</p>
+</section>
 
-    <!-- SERVICIOS -->
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Murales Colectivos</li>
-            <li>Jardines Comunitarios</li>
-            <li>Talleres de Pintura Ambiental</li>
-            <li>Educación Ambiental Participativa</li>
-            <li>Actividades Familiares Creativas</li>
-        </ul>
-    </section>
+<div class="linea"></div>
 
-    <!-- LÍNEAS ECOCULTURALES -->
-    <section id="lineas">
-        <h2>Líneas EcoCulturales</h2>
-        <ul>
-            <li>Eco Comunidades</li>
-            <li>Naturaleza en las Urbes</li>
-            <li>Arte para Mayores</li>
-            <li>Semilleros Infantiles Ambientales</li>
-        </ul>
-    </section>
-
-    <!-- GALERÍA -->
-    <section id="galeria">
-        <h2>Galería de Experiencias</h2>
-        <div class="carrusel">
-            <div class="carrusel-item"><img src="img1.jpg" alt="Imagen 1"></div>
-            <div class="carrusel-item"><img src="img2.jpg" alt="Imagen 2"></div>
-            <div class="carrusel-item"><img src="img3.jpg" alt="Imagen 3"></div>
-            <div class="carrusel-item"><img src="img4.jpg" alt="Imagen 4"></div>
+<section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicios">
+        <div class="servicio">
+            <h3>Murales Colectivos</h3>
+            <img src="mural.jpg" alt="Mural">
         </div>
-    </section>
+        <div class="servicio">
+            <h3>Jardines Comunitarios</h3>
+            <img src="jardin.jpg" alt="Jardín">
+        </div>
+        <div class="servicio">
+            <h3>Talleres de pintura</h3>
+            <img src="taller.jpg" alt="Taller">
+        </div>
+        <div class="servicio">
+            <h3>Educación ambiental</h3>
+            <img src="educacion.jpg" alt="Educación">
+        </div>
+    </div>
+</section>
 
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Correo: naturalezenlasurbes@gmail.com</p>
-        <p>WhatsApp: 3106430560</p>
-        <p>Cartagena de Indias, Colombia</p>
-    </section>
+<div class="linea"></div>
 
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        <p>&copy; 2025 AmbientART. Todos los derechos reservados.</p>
-    </footer>
+<section id="lineas">
+    <h2>Líneas EcoCulturales</h2>
+    <div class="lineas">
+        <div class="linea">
+            <h3>Eco Comunidades</h3>
+            <p>Educación ambiental, talleres y planeación participativa.</p>
+        </div>
+        <div class="linea">
+            <h3>Naturaleza en las Urbes</h3>
+            <p>Murales, siembra, limpiezas y jornadas ecológicas.</p>
+        </div>
+        <div class="linea">
+            <h3>Arte para Mayores</h3>
+            <p>Talleres artísticos y murales con adultos mayores.</p>
+        </div>
+        <div class="linea">
+            <h3>Semilleros Infantiles</h3>
+            <p>Creatividad ambiental para niñas y niños.</p>
+        </div>
+    </div>
+</section>
+
+<div class="linea"></div>
+
+<section id="galeria">
+    <h2>Galería de Experiencias</h2>
+    <div class="galeria">
+        <div class="foto"><img src="galeria1.jpg" alt="Actividad 1"></div>
+        <div class="foto"><img src="galeria2.jpg" alt="Actividad 2"></div>
+        <div class="foto"><img src="galeria3.jpg" alt="Actividad 3"></div>
+        <div class="foto"><img src="galeria4.jpg" alt="Actividad 4"></div>
+    </div>
+</section>
+
+<div class="linea"></div>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contacto">
+        <p>Email: ambientarte@gmail.com</p>
+        <p>WhatsApp: +57 300 000 0000</p>
+        <form>
+            <input type="text" placeholder="Tu nombre" required><br><br>
+            <input type="email" placeholder="Tu correo" required><br><br>
+            <textarea placeholder="Mensaje" required></textarea><br><br>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<a href="https://wa.me/573000000000" class="whatsapp-float" target="_blank">💬</a>
+
+<footer>
+    <p>&copy; 2025 AmbientArte. Todos los derechos reservados.</p>
+    <p>Diseño web por Kelly Montes Buelvas</p>
+</footer>
 
 </body>
 </html>
