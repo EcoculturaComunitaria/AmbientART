@@ -1,98 +1,107 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AmbientArte</title>
-  <link rel="stylesheet" href="estilos.css">
-</head>
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* fondo blanco */
+    color: #333333;
+    line-height: 1.6;
+}
 
-  <header>
-    <img src="logo.png" alt="AmbientArte Logo">
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#historia">Nuestra historia</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#lineas">Líneas EcoCulturales</a>
-      <a href="#galeria">Galería</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+/* HEADER */
+header {
+    background-color: #D8F3DC; /* verde pastel */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #A3B18A; /* borde café suave */
+}
 
-  <section id="inicio" class="section">
-    <img src="inicio.jpg" alt="Mural Inspirador">
-    <h1>Transformamos espacios, sembramos conciencia</h1>
-    <a href="#historia" class="btn">Conoce nuestra historia</a>
-  </section>
+header h1 {
+    color: #000000; /* negro para título principal */
+    font-size: 36px;
+    margin-bottom: 10px;
+}
 
-  <section id="historia" class="section">
-    <h2>Nuestra Historia</h2>
-    <p>Soy educadora comunitaria y amante de la naturaleza. AmbientArte nació del deseo de combinar muralismo, educación ambiental y jardinería urbana para transformar entornos y sembrar conciencia. Puedes consultar mi investigación en el repositorio de la Universidad de Cartagena.</p>
-  </section>
+nav ul {
+    list-style: none;
+}
 
-  <section id="servicios" class="section">
-    <h2>Servicios</h2>
-    <p>Ofrecemos actividades creativas y ambientales:</p>
-    <img src="mural.jpg" alt="Murales Colectivos">
-    <p>Murales Colectivos</p>
-    <img src="jardin.jpg" alt="Jardines Comunitarios">
-    <p>Jardines Comunitarios</p>
-    <img src="taller.jpg" alt="Talleres de pintura">
-    <p>Talleres de pintura ambiental</p>
-    <img src="educacion.jpg" alt="Educación ambiental">
-    <p>Educación ambiental participativa</p>
-  </section>
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-  <section id="lineas" class="section">
-    <h2>Líneas EcoCulturales</h2>
-    <div class="sub-menu">
-      <div>
-        <h3>Eco Comunidades</h3>
-        <p>Educación, planeación y talleres comunitarios para fortalecer el tejido social y ambiental.</p>
-      </div>
-      <div>
-        <h3>Naturaleza en las Urbes</h3>
-        <p>Murales, siembras, limpiezas y jornadas ecológicas en barrios y zonas urbanas.</p>
-      </div>
-      <div>
-        <h3>Arte para Mayores</h3>
-        <p>Talleres de pintura mural y artística dirigidos a adultos mayores de la comunidad.</p>
-      </div>
-      <div>
-        <h3>Semilleros Infantiles</h3>
-        <p>Jornadas ambientales, pintura y creatividad para niños y niñas de diferentes edades.</p>
-      </div>
-    </div>
-    <h3 style="margin-top:30px;">EcoConsejo de la Semana</h3>
-    <p>"Cada árbol que plantes es una historia que comienza." 🌱</p>
-    <h3 style="margin-top:30px;">Próximas Actividades</h3>
-    <p>Mural Colectivo - Barrio La Esperanza | 30 de abril, 8:00 a.m.</p>
-  </section>
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
 
-  <section id="galeria" class="section">
-    <h2>Galería de Experiencias</h2>
-    <div class="gallery">
-      <img src="galeria1.jpg" alt="Galería 1">
-      <img src="galeria2.jpg" alt="Galería 2">
-      <img src="galeria3.jpg" alt="Galería 3">
-      <img src="galeria4.jpg" alt="Galería 4">
-    </div>
-  </section>
+/* SECCIONES */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
 
-  <section id="contacto" class="section">
-    <h2>Contacto</h2>
-    <p>Email: ambientarte@gmail.com</p>
-    <p>WhatsApp: +57 300 000 0000</p>
-    <a href="https://wa.me/573000000000" class="btn">Escríbenos por WhatsApp</a>
-  </section>
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000000;
+}
 
-  <footer>
-    <p>Síguenos en redes sociales:</p>
-    <p>Facebook | Instagram | YouTube</p>
-    <p>&copy; 2025 AmbientArte | Todos los derechos reservados</p>
-  </footer>
+p, li {
+    font-size: 18px;
+    color: #333333;
+}
 
-</body>
-</html>
+/* BOTONES */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #80FFDB; /* azul vibrante fluorescente */
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #64DFDF;
+}
+
+/* LISTAS DE SERVICIOS Y LÍNEAS */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #FFF3B0; /* amarillo pastel */
+    border: 1px solid #A3B18A; /* borde café */
+    border-radius: 5px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: #D8F3DC;
+    padding: 15px;
+    text-align: center;
+    border-top: 2px solid #A3B18A;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #000000;
+    font-size: 16px;
+}
